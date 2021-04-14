@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Entities" />
+      <ProjectReference Include="..\..\..\Domain\Domain.API\LifetimeCollection.Domain.API.csproj" />
     </ItemGroup>
 
 </Project>

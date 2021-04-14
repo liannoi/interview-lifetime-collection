@@ -12,13 +12,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{1316F885-25B6-4F5B-BEDF-40116290DCB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifetimeCollection.Application.API", "Layers\Application\Application.API\LifetimeCollection.Application.API.csproj", "{145DD3AB-4AEA-4297-9749-65D820597BFB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifetimeCollection.Domain.API", "Layers\Domain\Domain.API\LifetimeCollection.Domain.API.csproj", "{1720BCAB-CAFD-4523-B01A-B931D9C65F93}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifetimeCollection.Infrastructure.API", "Layers\Infrastructure\Infrastructure.API\LifetimeCollection.Infrastructure.API.csproj", "{C8776AD3-E275-4015-AABD-D1C1F2C1FDFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifetimeCollection.Presentation.Console.Application", "Presentation\Console\Console.Application\LifetimeCollection.Presentation.Console.Application.csproj", "{EAB5674A-A3F2-483E-BF6B-27AABF7819E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LifetimeCollection", "LifetimeCollection", "{906EAB30-12C9-4676-B226-965C3E32906B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifetimeCollection.Application.LifetimeCollection.API", "Layers\Application\LifetimeCollection\Application.LifetimeCollection.API\LifetimeCollection.Application.LifetimeCollection.API.csproj", "{2BA335DB-5879-42B5-9DF3-66ADEABA8A88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +28,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{145DD3AB-4AEA-4297-9749-65D820597BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{145DD3AB-4AEA-4297-9749-65D820597BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{145DD3AB-4AEA-4297-9749-65D820597BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{145DD3AB-4AEA-4297-9749-65D820597BFB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1720BCAB-CAFD-4523-B01A-B931D9C65F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1720BCAB-CAFD-4523-B01A-B931D9C65F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1720BCAB-CAFD-4523-B01A-B931D9C65F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -42,15 +40,20 @@ Global
 		{EAB5674A-A3F2-483E-BF6B-27AABF7819E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAB5674A-A3F2-483E-BF6B-27AABF7819E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAB5674A-A3F2-483E-BF6B-27AABF7819E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BA335DB-5879-42B5-9DF3-66ADEABA8A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA335DB-5879-42B5-9DF3-66ADEABA8A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA335DB-5879-42B5-9DF3-66ADEABA8A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA335DB-5879-42B5-9DF3-66ADEABA8A88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8298E78E-0402-4F2E-9E61-1B1F2E5931DD} = {005CAA14-9010-42DE-BB91-9699075883EF}
 		{080151A6-DD90-485F-9707-C7ADC794C1D3} = {005CAA14-9010-42DE-BB91-9699075883EF}
 		{633AF607-A107-4100-ACCF-D1F4F94FF164} = {005CAA14-9010-42DE-BB91-9699075883EF}
 		{1316F885-25B6-4F5B-BEDF-40116290DCB5} = {611DF21A-96B1-44E5-8BBE-F9B0F59D3876}
-		{145DD3AB-4AEA-4297-9749-65D820597BFB} = {8298E78E-0402-4F2E-9E61-1B1F2E5931DD}
 		{1720BCAB-CAFD-4523-B01A-B931D9C65F93} = {080151A6-DD90-485F-9707-C7ADC794C1D3}
 		{C8776AD3-E275-4015-AABD-D1C1F2C1FDFF} = {633AF607-A107-4100-ACCF-D1F4F94FF164}
 		{EAB5674A-A3F2-483E-BF6B-27AABF7819E1} = {1316F885-25B6-4F5B-BEDF-40116290DCB5}
+		{906EAB30-12C9-4676-B226-965C3E32906B} = {8298E78E-0402-4F2E-9E61-1B1F2E5931DD}
+		{2BA335DB-5879-42B5-9DF3-66ADEABA8A88} = {906EAB30-12C9-4676-B226-965C3E32906B}
 	EndGlobalSection
 EndGlobal

@@ -3,6 +3,11 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Layers\Application\LifetimeCollection\Application.LifetimeCollection.API\LifetimeCollection.Application.LifetimeCollection.API.csproj" />
+    </ItemGroup>
 
 </Project>
