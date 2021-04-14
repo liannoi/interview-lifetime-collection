@@ -132,6 +132,13 @@ OnPersonUnavailable: (1) Barbara Smith
 Get: 
 ```
 
+## Status
+
+| Library                                                                                          | Package                                                               |
+|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| [LifetimeCollection.Domain](https://www.nuget.org/packages/LifetimeCollection.Domain/)           | ![](https://img.shields.io/nuget/vpre/LifetimeCollection.Domain)      |
+| [LifetimeCollection.Application](https://www.nuget.org/packages/LifetimeCollection.Application/) | ![](https://img.shields.io/nuget/vpre/LifetimeCollection.Application) |
+
 ## License
 
 This repository is licensed under [Apache-2.0](https://github.com/liannoi/interview-lifetime-collection/blob/main/LICENSE).
