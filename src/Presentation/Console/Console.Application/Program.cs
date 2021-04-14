@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
-using LifetimeCollection.Application.LifetimeCollection.API;
 using LifetimeCollection.Application.LifetimeCollection.API.Common.Interfaces;
+using LifetimeCollection.Application.LifetimeCollection.API.Implementation.Core;
 using LifetimeCollection.Domain.API.Events.Lifetime;
 
 namespace LifetimeCollection.Presentation.Console.Application
@@ -14,6 +14,7 @@ namespace LifetimeCollection.Presentation.Console.Application
 
             collection.Add(1);
             collection.Add(2);
+            System.Console.WriteLine(collection.Contains(2));
             System.Console.WriteLine(collection.Contains(3));
             //collection.RemoveAt(1);
             //await Task.Delay(5000);

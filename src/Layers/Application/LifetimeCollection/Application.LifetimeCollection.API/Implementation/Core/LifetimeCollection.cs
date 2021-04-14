@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using LifetimeCollection.Application.LifetimeCollection.API.Common.Interfaces;
 using LifetimeCollection.Application.LifetimeCollection.API.Extensions;
-using LifetimeCollection.Domain.API.Common.Lifetime;
+using LifetimeCollection.Domain.API.Common.Entities;
 using LifetimeCollection.Domain.API.Events.Lifetime;
 
-namespace LifetimeCollection.Application.LifetimeCollection.API
+namespace LifetimeCollection.Application.LifetimeCollection.API.Implementation.Core
 {
-    public sealed class LifetimeCollection<TEntity> : ILifetimeCollection<TEntity>
+    public sealed partial class LifetimeCollection<TEntity> : ILifetimeCollection<TEntity>
     {
         private readonly int _lifetimeSeconds;
         private readonly IList<LifetimeEntity<TEntity>> _list;
@@ -74,37 +74,6 @@ namespace LifetimeCollection.Application.LifetimeCollection.API
         public IEnumerator GetEnumerator()
         {
             return _list.GetEnumerator();
-        }
-
-        // Helpers.
-
-        IEnumerator<TEntity> IEnumerable<TEntity>.GetEnumerator()
-        {
-            return (IEnumerator<TEntity>) _list.GetEnumerator();
-        }
-
-        // Events.
-
-        private void OnItemUnavailable(ItemUnavailableEvent<TEntity> e)
-        {
-            ItemUnavailable?.Invoke(this, e);
-        }
-
-        private TEntity? GetIfAvailable(int index)
-        {
-            var model = _list[index];
-
-            var itemAvailable = model.AddedTime.Second + _lifetimeSeconds >= DateTime.Now.Second;
-            if (itemAvailable) return model.Entity;
-
-            OnItemUnavailable(new ItemUnavailableEvent<TEntity> {LifetimeEntity = model});
-
-            return default;
-        }
-
-        private int CheckIndex(int index)
-        {
-            return index.ThrowIfOutOfRange(_list.Count);
         }
     }
 }

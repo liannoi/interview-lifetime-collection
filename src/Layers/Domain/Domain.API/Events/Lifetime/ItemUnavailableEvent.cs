@@ -1,5 +1,5 @@
 using System;
-using LifetimeCollection.Domain.API.Common.Lifetime;
+using LifetimeCollection.Domain.API.Common.Entities;
 
 namespace LifetimeCollection.Domain.API.Events.Lifetime
 {

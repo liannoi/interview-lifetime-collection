@@ -1,6 +1,6 @@
 using System;
 
-namespace LifetimeCollection.Domain.API.Common.Lifetime
+namespace LifetimeCollection.Domain.API.Common.Entities
 {
     public class LifetimeEntity<TEntity>
     {
