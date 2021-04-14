@@ -3,8 +3,8 @@ using LifetimeCollection.Domain.API.Common.Entities;
 
 namespace LifetimeCollection.Domain.API.Events.Lifetime
 {
-    public class ItemUnavailableEvent<TEntity> : EventArgs
+    public class ItemAvailableEvent<TEntity> : EventArgs
     {
-        public LifetimeEntity<TEntity> UnavailableEntity { get; set; } = null!;
+        public LifetimeEntity<TEntity> AvailableEntity { get; set; } = null!;
     }
 }
